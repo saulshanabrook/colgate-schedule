@@ -1,4 +1,7 @@
+import codecs
+
 import flask
+import markdown
 
 from . import calendar
 
@@ -9,7 +12,9 @@ app.debug = True
 
 @app.route("/")
 def introduction():
-    return flask.render_template('index.html')
+    input_file = codecs.open("README.md", mode="r", encoding="utf-8")
+    text = input_file.read()
+    return markdown.markdown(text)
 
 
 @app.route("/<username>/<password>")

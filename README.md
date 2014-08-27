@@ -16,6 +16,8 @@ It scrapes the schedule page, using your username and password, and looks
 for the class times. Then it parses those times and creates a `.csv` file
 with them.
 
+You can see all of the code on [Github](https://github.com/saulshanabrook/colgate-schedule)
+
 ##But Isn't this horribly insecure?
 Well yes, because
 
@@ -37,3 +39,11 @@ Well yes, because
    have to worry about me snooping into your traffic.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/saulshanabrook/colgate-schedule)
+
+## Wait it isn't working!!
+It is pretty dumb. Also I have hard coded in the year and vacation time,
+so unless I can figure out a good way to scrape that, it is stuck on 
+2014-15 for now.
+
+If it breaks for one of your classes, let me know, just [leave an issue](https://github.com/saulshanabrook/colgate-schedule/issues/new)
+with as much info as you can, obviously not your username and password.

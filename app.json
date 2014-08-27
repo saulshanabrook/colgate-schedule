@@ -1,0 +1,12 @@
+{
+  "name": "Colgate Schedule",
+  "description": "Import your Colgate courses schedule to `.ics`",
+  "keywords": [
+    "colgate",
+    "calendar",
+    "ics"
+  ],
+  "website": "http://colgate-schedule.herokuapp.com/",
+  "repository": "https://github.com/saulshanabrook/colgate-schedule",
+  "success_url": "/"
+}

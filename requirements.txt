@@ -1,6 +1,11 @@
-flask
-beautifulsoup4
+# scraping
 requests
+beautifulsoup4
+
+# generating
 ics
-gunicorn
 pytz
+
+# serving
+gunicorn
+flask

@@ -17,7 +17,7 @@ def introduction():
     return markdown.markdown(text)
 
 
-@app.route("/<username>/<password>")
+@app.route("/<username>/<password>/")
 def ics(username, password):
     response = flask.make_response(str(calendar.get_ics_text(username, password)))
     response.headers['Content-Type'] = 'text/calendar'

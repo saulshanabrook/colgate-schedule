@@ -1,6 +1,7 @@
-#Colgate Schedule
+# Colgate Schedule
 Add your course schedule from your portal to iCal or Google Calendar automatically
-## How can I do that?
+
+## Instructions
 
 Add an iCalendar address that will have all your courses in it to 
 [Google Calendar](https://support.google.com/calendar/answer/37100?hl=en) or
@@ -11,14 +12,16 @@ another program.
 The address you should use is
 `http://colgate-schedule.herokuapp.com/<portal username>/<portal password>/`
 
-## How does it work?
+
+## Possible Questions:
+### How does it work?
 It scrapes the schedule page, using your username and password, and looks
 for the class times. Then it parses those times and creates a `.csv` file
 with them.
 
 You can see all of the code on [Github](https://github.com/saulshanabrook/colgate-schedule)
 
-##But Isn't this horribly insecure?
+### But Isn't this horribly insecure?
 Well yes, because
 
 1. I am not ussing SSL because they make you pay for it on Heroku. So every
@@ -40,7 +43,7 @@ Well yes, because
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/saulshanabrook/colgate-schedule)
 
-## Wait it isn't working!!
+### Wait, it isn't working!!
 It is pretty dumb. Also I have hard coded in the year and vacation time,
 so unless I can figure out a good way to scrape that, it is stuck on 
 2014-15 for now.

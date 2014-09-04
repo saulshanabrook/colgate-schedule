@@ -10,3 +10,4 @@ pytz
 gunicorn
 flask
 markdown
+Flask-SSLify

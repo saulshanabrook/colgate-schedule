@@ -1,7 +1,15 @@
 # Colgate Schedule
 Add your course schedule from your portal to iCal or Google Calendar automatically
 
+
+
 ## Instructions
+
+**UDPATE**: I have destroyed my heroku app that was hosting this code, at the request
+of Colgate IT. The app encourages bad security procedures by teaching students to
+enter their login info on a page that is not official. IT is working to open up
+authentication on student info so that apps like this could be created in a
+secure manor.
 
 Add an iCalendar address that will have all your courses in it to 
 [Google Calendar](https://support.google.com/calendar/answer/37100?hl=en) or

@@ -8,6 +8,8 @@ from . import calendar
 
 
 app = flask.Flask(__name__)
+app.debug = True
+
 flask_sslify.SSLify(app, permanent=True)
 
 

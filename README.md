@@ -1,8 +1,6 @@
 # Colgate Schedule
 Add your course schedule from your portal to iCal or Google Calendar automatically
 
-
-
 ## Instructions
 
 **UDPATE**: I have destroyed my heroku app that was hosting this code, at the request
@@ -11,7 +9,7 @@ enter their login info on a page that is not official. IT is working to open up
 authentication on student info so that apps like this could be created in a
 secure manor.
 
-Add an iCalendar address that will have all your courses in it to 
+Add an iCalendar address that will have all your courses in it to
 [Google Calendar](https://support.google.com/calendar/answer/37100?hl=en) or
 [Apple Calendar](http://support.apple.com/kb/PH11523) or download the
 `.ics` file by putting the calendar address in your browser, to import it to
@@ -45,7 +43,7 @@ someone who is not
 
 ### Wait, it isn't working!!
 It is pretty dumb. Also I have hard coded in the year and vacation time,
-so unless I can figure out a good way to scrape that, it is stuck on 
+so unless I can figure out a good way to scrape that, it is stuck on
 2014-15 for now.
 
 If it breaks for one of your classes, let me know, just [leave an issue](https://github.com/saulshanabrook/colgate-schedule/issues/new)

@@ -4,7 +4,7 @@ import flask
 import flask_sslify
 import markdown
 
-from . import calendar
+from . import calendar_utils
 
 
 app = flask.Flask(__name__)
@@ -22,7 +22,8 @@ def introduction():
 
 @app.route("/<username>/<password>/")
 def ics(username, password):
-    response = flask.make_response(str(calendar.get_ics_text(username, password)))
+    response = flask.make_response(str(calendar_utils.get_ics_text(username, password)))
     response.headers['Content-Type'] = 'text/calendar'
     response.headers['Content-Disposition'] = 'attachment; filename=courses.ics'
     return response
+

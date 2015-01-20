@@ -14,6 +14,8 @@ def daterange(start_date, end_date):
         yield start_date + datetime.timedelta(n)
 
 
+TERM = '201402'
+
 FIRST_DAY_OF_CLASSES = datetime.date(2014, 8, 30)
 LAST_DAY_OF_CLASSES = datetime.date(2015, 5, 1)
 DAYS_WITH_NO_CLASSES = list(itertools.chain.from_iterable([
@@ -116,7 +118,10 @@ def get_courses(username, password):
 
     # then can get schedule
     SCHEDULE_URL = 'https://bannersv04.colgate.edu/prod/bwskfshd.P_CrseSchdDetl'
-    r = session.get(SCHEDULE_URL)
+    form_data = {
+        'term_in': TERM
+    }
+    r = session.post(SCHEDULE_URL, data=form_data)
     soup = bs4.BeautifulSoup(r.text)
     courses_table = soup.find('table', class_='datadisplaytable')
     # skip the first and last row, because they are not courses
